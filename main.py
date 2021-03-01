@@ -1,5 +1,5 @@
 import random
-import termcolor
+
 
 def print_pic1():
 	print("""
