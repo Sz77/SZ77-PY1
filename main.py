@@ -1,80 +1,88 @@
 import random
+import termcolor
 
 
 def print_pic1():
-	print("""
+	termcolor.cprint("""
+	picture 1:
 	x-------x
-	""")
+	""","green")
 
 
 def print_pic2():
-	print("""
+	termcolor.cprint("""
+	picture 2:
 	x-------x
 	|
 	|
 	|
 	|
 	|
-	""")
+	""","green")
 
 
 def print_pic3():
-	print("""
+	termcolor.cprint("""
+	picture 3:
 	x-------x
 	|       |
 	|       0
 	|
 	|
 	|
-	""")
+	""","green")
 
 
 def print_pic4():
-	print("""
+	termcolor.cprint("""
+	picture 4:
 	x------x
 	|      |
 	|      0
 	|      |
 	|
 	|
-	""")
+	""","green")
 
 
 def print_pic5():
-	print("""
+	termcolor.cprint("""
+	picture 5:
 	x-------x
 	|       |
 	|       0
 	|      /|\\
 	|
 	|
-	""")
+	""","green")
 
 
 def print_pic6():
-	print("""
+	termcolor.cprint("""
+	picture 6:
 	x-------x
 	|       |
 	|       0
-	|      /|
+	|      /|\\
 	|      / 
 	|
-	""")
+	""","green")
 
 
 def print_pic7():
-	print("""
+	termcolor.cprint("""
+	picture 7:
 	x-------x
 	|       |
 	|       0
 	|      /|\\
 	|      / \\
 	|
-	""")
+	""","green")
 
 
 def welcome():
-	print("""
+	termcolor.cprint("""
 	 _    _                                     
 	| |  | |                                        
     | |__| | __ _ _ __   __ _ _ __ ___   __ _ _ __  
@@ -83,8 +91,8 @@ def welcome():
     |_|  |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
                          __/ |                      
                         |___/
-	""")
-	print(random.randint(5, 10))
+	""","blue")
+	termcolor.cprint(random.randint(5, 10),"red")
 
 
 if __name__ == '__main__':
