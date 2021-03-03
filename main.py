@@ -6,7 +6,7 @@ def print_pic1():
 	termcolor.cprint("""
 	picture 1:
 	x-------x
-	""","green")
+	""", "green")
 
 
 def print_pic2():
@@ -18,7 +18,7 @@ def print_pic2():
 	|
 	|
 	|
-	""","green")
+	""", "green")
 
 
 def print_pic3():
@@ -30,7 +30,7 @@ def print_pic3():
 	|
 	|
 	|
-	""","green")
+	""", "green")
 
 
 def print_pic4():
@@ -42,7 +42,7 @@ def print_pic4():
 	|      |
 	|
 	|
-	""","green")
+	""", "green")
 
 
 def print_pic5():
@@ -54,7 +54,7 @@ def print_pic5():
 	|      /|\\
 	|
 	|
-	""","green")
+	""", "green")
 
 
 def print_pic6():
@@ -66,7 +66,7 @@ def print_pic6():
 	|      /|\\
 	|      / 
 	|
-	""","green")
+	""", "green")
 
 
 def print_pic7():
@@ -78,7 +78,7 @@ def print_pic7():
 	|      /|\\
 	|      / \\
 	|
-	""","green")
+	""", "green")
 
 
 def welcome():
@@ -91,8 +91,8 @@ def welcome():
     |_|  |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
                          __/ |                      
                         |___/
-	""","blue")
-	termcolor.cprint(random.randint(5, 10),"red")
+	""", "blue")
+	termcolor.cprint(random.randint(5, 10), "red")
 
 
 if __name__ == '__main__':
