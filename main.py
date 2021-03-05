@@ -1,4 +1,4 @@
-# import termcolor
+import termcolor
 
 HANGMAN_ASCII_ART = """Welcome to the game Hangman
   _    _                                         
@@ -97,17 +97,17 @@ def welcome():
 
 
 def guess():
-	user_guess = input("Guess a letter: ")
-	print(user_guess)
+	user_guess = input("Please enter a word: ").lower()
+	print("_ " * len(user_guess))
 
 
 if __name__ == '__main__':
-	# welcome()
+	welcome()
 	guess()
-# print_pic1()
-# print_pic2()
-# print_pic3()
-# print_pic4()
-# print_pic5()
-# print_pic6()
-# print_pic7()
+	print_pic1()
+	print_pic2()
+	print_pic3()
+	print_pic4()
+	print_pic5()
+	print_pic6()
+	print_pic7()
