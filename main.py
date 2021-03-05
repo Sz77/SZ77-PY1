@@ -1,5 +1,16 @@
-import random
-import termcolor
+# import termcolor
+
+HANGMAN_ASCII_ART = """Welcome to the game Hangman
+  _    _                                         
+ | |  | |                                        
+ | |__| | __ _ _ __   __ _ _ __ ___   __ _ _ __  
+ |  __  |/ _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
+ | |  | | (_| | | | | (_| | | | | | | (_| | | | |
+ |_|  |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
+                      __/ |                      
+                     |___/                      
+"""
+MAX_TRIES = 6
 
 
 def print_pic1():
@@ -82,25 +93,21 @@ def print_pic7():
 
 
 def welcome():
-	termcolor.cprint("""
-	 _    _                                     
-	| |  | |                                        
-    | |__| | __ _ _ __   __ _ _ __ ___   __ _ _ __  
-    |  __  |/ _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
-    | |  | | (_| | | | | (_| | | | | | | (_| | | | |
-    |_|  |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
-                         __/ |                      
-                        |___/
-	""", "blue")
-	termcolor.cprint(random.randint(5, 10), "red")
+	print(HANGMAN_ASCII_ART, MAX_TRIES)
+
+
+def guess():
+	user_guess = input("Guess a letter: ")
+	print(user_guess)
 
 
 if __name__ == '__main__':
-	welcome()
-	print_pic1()
-	print_pic2()
-	print_pic3()
-	print_pic4()
-	print_pic5()
-	print_pic6()
-	print_pic7()
+	# welcome()
+	guess()
+# print_pic1()
+# print_pic2()
+# print_pic3()
+# print_pic4()
+# print_pic5()
+# print_pic6()
+# print_pic7()
