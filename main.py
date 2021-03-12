@@ -1,4 +1,5 @@
-import termcolor
+# import termcolor
+import re
 
 HANGMAN_ASCII_ART = """Welcome to the game Hangman
   _    _                                         
@@ -97,17 +98,24 @@ def welcome():
 
 
 def guess():
+	len_flag = False
+	special_char_flag = False
+	string_check = re.compile('[@_!#$%^&*()<>?/\|}{~:]')
 	user_guess = input("Please enter a word: ").lower()
-	print("_ " * len(user_guess))
+	if len(user_guess) > 1:
+		len_flag = True
+	if not (string_check.search(user_guess) is None):
+		special_char_flag = True
+	if special_char_flag and len_flag:
+		print("E3")
+	elif special_char_flag:
+		print("E2")
+	elif len_flag:
+		print("E1")
+	else:
+		print(user_guess)
 
 
 if __name__ == '__main__':
-	welcome()
+	# welcome()
 	guess()
-	print_pic1()
-	print_pic2()
-	print_pic3()
-	print_pic4()
-	print_pic5()
-	print_pic6()
-	print_pic7()
